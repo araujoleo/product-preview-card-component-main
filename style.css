@@ -1,0 +1,131 @@
+*{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.main-section{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    width: 600px;
+}
+
+.img-product{
+    height: 450px;
+    width: 400px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.product-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin-left: 25px;
+    margin-right: 15px;
+    height: 450px;
+    width: 400px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Fraunces', serif;
+}
+.price p{
+    margin-left: 16px;
+    text-decoration: line-through;
+}
+
+.btn-cart{
+    color: white;
+    background-color:  hsl(158, 36%, 37%); /*activate hsl(158, 38%, 28%)*/
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 240px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+.btn-cart:hover{
+    background-color: hsl(158, 38%, 28%);
+}
+
+
+
+h1{
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+h2{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.p-perfume{
+    margin-top: 15px;
+    letter-spacing: 3px;
+    font-size: .8em;
+}
+
+
+.attribution{ 
+   font-size: 12px; 
+   text-align: center;
+   padding-top: 20px; 
+}
+.attribution a{
+     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+/*---Mobile---*/
+
+@media(max-width:375px){
+    .main-section{
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction:column;
+        margin: auto;
+        margin-top: 20px;
+        width: 320px;
+    }
+    
+    .img-product{
+        height: 230px;
+        width: 320px;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .product-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        margin-left: 25px;
+        margin-right: 15px;
+        height: 370px;
+        width: 320px;
+    }
+}
